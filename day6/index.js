@@ -14,8 +14,8 @@ function saveCountry(text) {
 
 function retainSelect() {
   const selected = localStorage.getItem(COUNTRY_LS);
-  const selectedItem = document.querySelector(`option[value = ${selected}]`);
   if (selected !== null) {
+    const selectedItem = document.querySelector(`option[value = ${selected}]`);
     selectedItem.selected = true;
   }
 }
