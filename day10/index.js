@@ -21,11 +21,11 @@ function paintResult() {
     result.innerText = `Please enter the number below ${userRange}`;
   } else if (parseInt(guessInput.value) === randomNumber) {
     winOrLost.innerText = `You won!`;
-    result.innerText = `You chose: ${userNumber}, the machine chose: ${randomNumber}.`;
+    result.innerHTML = `You chose: ${userNumber}<br/>The machine chose: ${randomNumber}`;
     result.appendChild(winOrLost);
   } else {
     winOrLost.innerText = `You lost!`;
-    result.innerText = `You chose: ${userNumber}, the machine chose: ${randomNumber}.`;
+    result.innerHTML = `You chose: ${userNumber}<br/>The machine chose: ${randomNumber}`;
     result.appendChild(winOrLost);
   }
 }

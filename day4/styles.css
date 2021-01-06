@@ -7,3 +7,15 @@ body {
   font-size: 50px;
   color: white;
 }
+
+.yellow {
+  background-color: #f1c40f;
+}
+
+.purple {
+  background-color: #9b59b6;
+}
+
+.blue {
+  background-color: #3498db;
+}

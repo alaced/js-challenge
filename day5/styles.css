@@ -2,14 +2,37 @@ body {
   font-family: sans-serif;
   background-color: #b22025;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0px;
 }
 
-.title {
-  font-size: 30px;
-  padding: 5px;
+.d-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  border: 2px solid white;
 }
 
-.dday {
-  font-size: 20px;
+.d-day:hover {
+  background-color: white;
+  color: #b22025;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.d-day__title {
+  font-size: 2.5rem;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+.d-day__desc {
+  font-size: 1.5rem;
   padding: 5px;
+  letter-spacing: 2px;
 }

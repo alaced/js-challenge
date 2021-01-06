@@ -1,19 +1,25 @@
-const colors = ["#2b8cd2", "#914ead", "#eebc10"];
-const body = document.querySelector("body");
+const body = document.body;
 
-function colorhandler() {
+const YELLOW = "yellow";
+const PURPLE = "purple";
+const BLUE = "blue";
+
+function resizeHandler() {
   const width = window.innerWidth;
-  if (width < 500) {
-    body.style.backgroundColor = colors[0];
+  if (width > 900) {
+    body.classList.add(YELLOW);
+    body.classList.remove(PURPLE);
   } else if (500 <= width && width < 900) {
-    body.style.backgroundColor = colors[1];
+    body.classList.add(PURPLE);
+    body.classList.remove(YELLOW, BLUE);
   } else {
-    body.style.backgroundColor = colors[2];
+    body.classList.remove(PURPLE);
+    body.classList.add(BLUE);
   }
 }
 
 function init() {
-  window.addEventListener("resize", colorhandler);
+  window.addEventListener("resize", resizeHandler);
 }
 
 init();
